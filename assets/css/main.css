@@ -3776,3 +3776,173 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.cost-section { padding-top: 90px; padding-bottom: 90px; }
+
+.cost-kicker{
+  color: rgba(255,255,255,0.65);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.cost-title { font-size: 3rem; font-weight: 800; }
+.cost-subtitle { max-width: 54ch; }
+
+.cost-hero, .cost-block, .cost-panel{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.cost-hero-icon{
+  width: 86px;
+  height: 86px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  margin-bottom: 16px;
+}
+.cost-hero-icon img{ width: 56px; height: 56px; object-fit: contain; }
+
+.cost-block-top{
+  display:flex;
+  gap: 18px;
+  align-items:flex-start;
+}
+
+.cost-icon-lg{
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  flex: 0 0 auto;
+}
+.cost-icon-lg img{ width: 48px; height: 48px; object-fit: contain; }
+
+.cost-metric{ display:flex; flex-direction:column; gap: 4px; }
+.cost-number{ color:#fff; font-weight: 800; font-size: 1.8rem; line-height: 1.1; }
+.cost-label{ color: rgba(255,255,255,0.70); }
+
+.cost-list{
+  margin: 0;
+  padding-left: 1.1rem;
+  color: rgba(255,255,255,0.75);
+}
+.cost-list li{ margin-bottom: 10px; }
+
+.cost-callout{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 16px;
+}
+.cost-callout-number{
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.cost-fact{
+  display:flex;
+  gap: 14px;
+  align-items:center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.cost-fact-icon{
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  flex: 0 0 auto;
+}
+.cost-fact-icon img{ width: 34px; height: 34px; object-fit: contain; }
+
+@media (max-width: 992px){
+  .cost-title{ font-size: 2.2rem; }
+}
+
+/* Impact strip sizing fix */
+.impact-strip { padding-top: 80px; padding-bottom: 80px; }
+
+.impact-item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.impact-icon{
+  width: 288px;          /* was too large */
+  height: 288px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.impact-title{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.impact-lines{
+  color: rgba(255,255,255,0.70);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.impact-row { margin-top: 24px; }
+
+@media (max-width: 768px){
+  .impact-icon{
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.leotrek-figure {
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+.offering-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.offering-panel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.offering-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.55;
+}
+
+.offering-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .offering-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
