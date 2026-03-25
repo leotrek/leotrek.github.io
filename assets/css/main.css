@@ -4459,6 +4459,10 @@ body.lt-site .hero .container {
   gap: 1rem;
 }
 
+.lt-platform-board {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .lt-process-card {
   position: relative;
   min-height: 220px;
