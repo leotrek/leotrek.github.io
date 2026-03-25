@@ -253,16 +253,29 @@ h6 {
 
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
+    appearance: none;
+    background: transparent;
+    border: 0;
     color: var(--nav-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
     font-size: 28px;
+    height: 44px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 0;
+    padding: 0;
+    width: 44px;
     cursor: pointer;
     transition: color 0.3s;
   }
 
   .navmenu {
+    align-items: center;
+    display: flex;
     padding: 0;
+    position: relative;
     z-index: 9997;
   }
 
@@ -270,7 +283,11 @@ h6 {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    top: calc(100% + 12px);
+    right: 0;
+    left: auto;
+    width: min(78vw, 320px);
+    max-height: min(70vh, 480px);
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
@@ -351,25 +368,15 @@ h6 {
   }
 
   .mobile-nav-active {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
+    color: var(--nav-hover-color);
   }
 
   .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
+    overflow: visible;
   }
 
   .mobile-nav-active .navmenu>ul {
@@ -5124,7 +5131,7 @@ body.lt-site #preloader {
   }
 
   body.lt-site .header .btn-getstarted {
-    margin-left: 12px;
+    display: none;
   }
 
   .lt-hero {

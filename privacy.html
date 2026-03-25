@@ -17,7 +17,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/main.css?v=20260325-2" rel="stylesheet" />
 
   <style>
     body {
@@ -89,8 +89,8 @@
         <img src="assets/img/logo.png" alt="" />
         <h1 class="sitename">LeoTrek</h1>
       </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
+      <nav id="navmenu" class="navmenu" aria-label="Primary navigation">
+        <ul id="navmenu-list">
           <li><a href="index.html#hero">Home</a></li>
           <li><a href="index.html#mission">Mission</a></li>
           <li><a href="index.html#impact">Why Now</a></li>
@@ -99,6 +99,15 @@
           <li><a href="index.html#team">Team</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none bi bi-list"
+          aria-controls="navmenu-list"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -188,6 +197,6 @@
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20260325-2"></script>
 </body>
 </html>

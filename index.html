@@ -27,7 +27,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260325-2" rel="stylesheet">
 </head>
 
 <body class="index-page lt-site">
@@ -41,7 +41,7 @@
       </a>
 
       <nav id="navmenu" class="navmenu" aria-label="Primary navigation">
-        <ul>
+        <ul id="navmenu-list">
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#mission">Mission</a></li>
           <li><a href="#impact">Why Now</a></li>
@@ -51,7 +51,15 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none bi bi-list"
+          aria-controls="navmenu-list"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
       </nav>
 
       <a class="btn-getstarted" href="#contact">Talk to us</a>
@@ -672,7 +680,7 @@
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20260325-2"></script>
 
 </body>
 

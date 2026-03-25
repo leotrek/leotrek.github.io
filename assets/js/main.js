@@ -27,14 +27,40 @@
     body.classList.toggle("scrolled", window.scrollY > 100);
   }
 
+  function setMobileNavState(isOpen) {
+    if (!mobileNavToggleBtn) {
+      return;
+    }
+
+    body.classList.toggle("mobile-nav-active", isOpen);
+    mobileNavToggleBtn.classList.toggle("bi-list", !isOpen);
+    mobileNavToggleBtn.classList.toggle("bi-x", isOpen);
+    mobileNavToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    mobileNavToggleBtn.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+  }
+
   function toggleMobileNav() {
     if (!mobileNavToggleBtn) {
       return;
     }
 
-    body.classList.toggle("mobile-nav-active");
-    mobileNavToggleBtn.classList.toggle("bi-list");
-    mobileNavToggleBtn.classList.toggle("bi-x");
+    setMobileNavState(!body.classList.contains("mobile-nav-active"));
+  }
+
+  function syncMobileNav() {
+    if (!mobileNavToggleBtn) {
+      return;
+    }
+
+    if (window.innerWidth >= 1200) {
+      setMobileNavState(false);
+      return;
+    }
+
+    setMobileNavState(body.classList.contains("mobile-nav-active"));
   }
 
   function toggleScrollTop() {
@@ -440,6 +466,7 @@
   }
 
   function initPageBehaviors() {
+    syncMobileNav();
     toggleScrolled();
     toggleScrollTop();
     navmenuScrollspy();
@@ -453,7 +480,7 @@
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       if (body.classList.contains("mobile-nav-active")) {
-        toggleMobileNav();
+        setMobileNavState(false);
       }
     });
   });
@@ -497,6 +524,8 @@
   window.addEventListener("hashchange", () => {
     window.setTimeout(initPageBehaviors, 0);
   });
+
+  window.addEventListener("resize", syncMobileNav);
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") {
