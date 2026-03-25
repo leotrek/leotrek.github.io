@@ -278,8 +278,8 @@
                   <span class="lt-step-number">05</span>
                   <i class="bi bi-check2-circle lt-process-icon"></i>
                 </div>
-                <h3>Simulation, and validation</h3>
-                <p>Test mission logic, workload placement, and model behavior before deployment so operators can validate latency, throughput, and operational tradeoffs and define performance guarantees earlier.</p>
+                <h3>Simulation and validation</h3>
+                <p>Test mission logic, workload placement, and model behavior before deployment so operators can validate latency, throughput, and operational tradeoffs earlier.</p>
               </article>
               <article class="lt-process-card lt-platform-card">
                 <div class="lt-process-card-head">
@@ -287,8 +287,74 @@
                   <i class="bi bi-box-seam lt-process-icon"></i>
                 </div>
                 <h3>Off-the-shelf AI services</h3>
-                <p>Offer reusable optimization and inference services without requiring every developer to build custom software stacks from scratch.</p>
+                <p>Offer reusable optimization and inference services such as pruning, quantization, and deployment-ready packaging without requiring every team to build custom software stacks from scratch.</p>
               </article>
+            </div>
+
+            <div class="lt-simulation-panel" data-aos="fade-up" data-aos-delay="150">
+              <div class="lt-simulation-panel-head">
+                <div>
+                  <span class="lt-card-kicker">Scenario Preview</span>
+                  <h3>Local orbit simulation</h3>
+                  <p>
+                    A compact view of orbit nodes, assigned workflows, and computation moving inside the target area before full downlink.
+                  </p>
+                </div>
+
+                <div class="lt-simulation-clock-block">
+                  <span class="lt-simulation-label">Simulation clock</span>
+                  <strong id="lt-sim-clock">Mar 23, 2026, 12:35:27 UTC</strong>
+                  <span id="lt-sim-area">Iberian Peninsula</span>
+                </div>
+              </div>
+
+              <div class="lt-simulation-panel-grid">
+                <div class="lt-simulation-map" id="lt-sim-map" aria-hidden="true">
+                  <div class="lt-simulation-map-copy">
+                    <span class="lt-card-kicker">Orbit Map</span>
+                    <h4 id="lt-sim-map-title">Iberia wildfire watch</h4>
+                    <p>Closest nodes are highlighted while the active compute task moves across the selected monitoring zone.</p>
+                  </div>
+
+                  <div class="lt-simulation-region" id="lt-sim-region"></div>
+                  <div class="lt-simulation-region-label" id="lt-sim-region-label">Iberian Peninsula</div>
+                  <div class="lt-simulation-link" id="lt-sim-link"></div>
+                  <div class="lt-simulation-compute" id="lt-sim-compute"></div>
+                  <div class="lt-simulation-satellites" id="lt-sim-satellites"></div>
+                </div>
+
+                <aside class="lt-simulation-side">
+                  <span class="lt-card-kicker">Active Workflow</span>
+                  <h4 id="lt-sim-workflow">Iberia wildfire watch</h4>
+                  <p id="lt-sim-description">Mock wildfire workflow scanning Iberia for thermal anomalies and smoke indicators.</p>
+
+                  <div class="lt-simulation-metrics">
+                    <div class="lt-simulation-row">
+                      <span>Template</span>
+                      <strong id="lt-sim-template">wildfire-monitoring</strong>
+                    </div>
+                    <div class="lt-simulation-row">
+                      <span>Cadence</span>
+                      <strong id="lt-sim-cadence">10 min sweep</strong>
+                    </div>
+                    <div class="lt-simulation-row">
+                      <span>Output</span>
+                      <strong id="lt-sim-output">alert-and-mask</strong>
+                    </div>
+                    <div class="lt-simulation-row">
+                      <span>Tracker</span>
+                      <strong id="lt-sim-tracker">LEO-01</strong>
+                    </div>
+                  </div>
+
+                  <span class="lt-simulation-label">Closest nodes</span>
+                  <div class="lt-simulation-chip-wrap" id="lt-sim-chips">
+                    <span class="lt-simulation-chip">LEO-01</span>
+                    <span class="lt-simulation-chip">LEO-03</span>
+                    <span class="lt-simulation-chip">LEO-05</span>
+                  </div>
+                </aside>
+              </div>
             </div>
 
             <div class="lt-solution-note">
