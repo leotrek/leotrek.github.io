@@ -7,6 +7,7 @@
   const scrollTop = document.querySelector(".scroll-top");
   const preloader = document.querySelector("#preloader");
   const navLinks = Array.from(document.querySelectorAll(".navmenu a"));
+  let simulationPreviewInitialized = false;
 
   function hasStickyHeader() {
     return !!(
@@ -99,6 +100,10 @@
   }
 
   function initSimulationPreview() {
+    if (simulationPreviewInitialized) {
+      return;
+    }
+
     const map = document.querySelector("#lt-sim-map");
     const clock = document.querySelector("#lt-sim-clock");
     const area = document.querySelector("#lt-sim-area");
@@ -136,6 +141,8 @@
     ) {
       return;
     }
+
+    simulationPreviewInitialized = true;
 
     const satellites = [
       { id: "leo-01", name: "LEO-01", periodMinutes: 95, inclinationDeg: 55, phaseOffsetDeg: 0, trackOffsetDeg: -24 },
@@ -416,6 +423,13 @@
     }
   }
 
+  function initPageBehaviors() {
+    toggleScrolled();
+    toggleScrollTop();
+    navmenuScrollspy();
+    initSimulationPreview();
+  }
+
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener("click", toggleMobileNav);
   }
@@ -444,13 +458,20 @@
     });
   }
 
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPageBehaviors, { once: true });
+  } else {
+    initPageBehaviors();
+  }
+
   window.addEventListener("load", () => {
-    toggleScrolled();
-    toggleScrollTop();
+    initPageBehaviors();
     initAOS();
-    initSimulationPreview();
     setTimeout(restoreHashScroll, 100);
-    navmenuScrollspy();
+  });
+
+  window.addEventListener("pageshow", () => {
+    initPageBehaviors();
   });
 
   document.addEventListener("scroll", () => {
