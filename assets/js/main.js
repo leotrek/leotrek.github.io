@@ -8,6 +8,7 @@
   const preloader = document.querySelector("#preloader");
   const navLinks = Array.from(document.querySelectorAll(".navmenu a"));
   let simulationPreviewInitialized = false;
+  let simulationPreviewTimer = null;
 
   function hasStickyHeader() {
     return !!(
@@ -100,7 +101,7 @@
   }
 
   function initSimulationPreview() {
-    if (simulationPreviewInitialized) {
+    if (simulationPreviewInitialized && simulationPreviewTimer !== null) {
       return;
     }
 
@@ -142,6 +143,7 @@
       return;
     }
 
+    satellitesRoot.replaceChildren();
     simulationPreviewInitialized = true;
 
     const satellites = [
@@ -212,7 +214,6 @@
       hour12: false,
       timeZone: "UTC",
     });
-    const epochMs = Date.parse("2026-03-23T08:00:00Z");
     const simulationRate = 180;
     const workflowWindowSeconds = 8;
     const startTime = window.performance.now();
@@ -243,8 +244,8 @@
       chips.replaceChildren(fragment);
     }
 
-    function formatSimulationClock(elapsedSeconds) {
-      return `${clockFormatter.format(new Date(epochMs + (Math.round(elapsedSeconds) * 1000)))} UTC`;
+    function formatSimulationClock(nowMs) {
+      return `${clockFormatter.format(new Date(nowMs))} UTC`;
     }
 
     function mapLatLngToPercent(lat, lng) {
@@ -294,7 +295,12 @@
       link.style.transform = `translateY(-50%) rotate(${angle}deg)`;
     }
 
-    function renderFrame(now) {
+    function renderFrame(now = window.performance.now()) {
+      if (!document.body.contains(map)) {
+        stopSimulationPreview();
+        return;
+      }
+
       const elapsedRealSeconds = (now - startTime) / 1000;
       const elapsedSimulationSeconds = elapsedRealSeconds * simulationRate;
       const workflowIndex = Math.floor(elapsedRealSeconds / workflowWindowSeconds) % workflows.length;
@@ -308,7 +314,7 @@
       const computePoint = getComputePoint(activeWorkflow.region, elapsedRealSeconds, workflowIndex);
       const chipKey = closestIds.join(",");
 
-      clock.textContent = formatSimulationClock(elapsedSimulationSeconds);
+      clock.textContent = formatSimulationClock(Date.now());
       area.textContent = activeWorkflow.areaLabel;
       region.style.left = `${regionBounds.left}%`;
       region.style.top = `${regionBounds.top}%`;
@@ -355,11 +361,12 @@
         lastTrackerId = trackerId;
         lastChipKey = chipKey;
       }
-
-      window.requestAnimationFrame(renderFrame);
     }
 
-    window.requestAnimationFrame(renderFrame);
+    renderFrame();
+    simulationPreviewTimer = window.setInterval(() => {
+      renderFrame(window.performance.now());
+    }, 50);
 
     function getSatellitePosition(satellite, elapsedSeconds) {
       const orbitProgress = elapsedSeconds / (satellite.periodMinutes * 60);
@@ -423,6 +430,15 @@
     }
   }
 
+  function stopSimulationPreview() {
+    if (simulationPreviewTimer !== null) {
+      window.clearInterval(simulationPreviewTimer);
+      simulationPreviewTimer = null;
+    }
+
+    simulationPreviewInitialized = false;
+  }
+
   function initPageBehaviors() {
     toggleScrolled();
     toggleScrollTop();
@@ -472,6 +488,23 @@
 
   window.addEventListener("pageshow", () => {
     initPageBehaviors();
+  });
+
+  window.addEventListener("pagehide", () => {
+    stopSimulationPreview();
+  });
+
+  window.addEventListener("hashchange", () => {
+    window.setTimeout(initPageBehaviors, 0);
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+      initPageBehaviors();
+      return;
+    }
+
+    stopSimulationPreview();
   });
 
   document.addEventListener("scroll", () => {

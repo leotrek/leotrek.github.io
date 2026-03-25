@@ -630,6 +630,20 @@ section,
   }
 }
 
+.lt-anchor-alias {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 1199px) {
+  .lt-anchor-alias {
+    top: -66px;
+  }
+}
+
 .section-title {
   padding-bottom: 60px;
   position: relative;
