@@ -3969,7 +3969,7 @@ body.lt-site .hero .container {
   margin: -4rem -18rem -15rem auto;
   transform: translate(-24%, -2%);
   mix-blend-mode: screen;
-  filter: saturate(0.78) brightness(0.84) contrast(0.9) blur(1px);
+  filter: saturate(0.78) brightness(0.84) contrast(0.9);
   -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 0.62) 68%, transparent 92%);
   mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 42%, rgba(0, 0, 0, 0.62) 68%, transparent 92%);
 }
