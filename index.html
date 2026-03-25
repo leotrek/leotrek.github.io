@@ -4,1312 +4,573 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>LeoTrek</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>LeoTrek | Real-Time Intelligence in Space</title>
+  <meta
+    name="description"
+    content="LeoTrek is building a distributed AI platform for low Earth orbit satellites, enabling real-time Earth observation intelligence for wildfire response and other urgent monitoring use cases."
+  >
+  <meta
+    name="keywords"
+    content="LeoTrek, Earth observation, space AI, satellite intelligence, wildfire monitoring, LEO satellites, orbital computing"
+  >
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    #hero.hero {
-      background: #000 !important;
-    }  
-    #hero.hero::after {
-      content: none !important;
-    }
-
-  </style>
-
-  <!-- =======================================================
-  * Template Name: Strategy
-  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
-  * Updated: Jun 06 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page lt-site">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.png" alt="LeoTrek logo">
         <h1 class="sitename">LeoTrek</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#impact">Impact</a></li>
-          <li><a href="index.html#offering">Solution</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#publications">Publications</a></li>
-          <!-- <li><a href="index.html#partners">Partners</a></li> -->
-        
-          <!--  
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-        
-          <li><a href="#contact">Contact</a></li>-->
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#impact">Why Now</a></li>
+          <li><a href="#solution">Platform</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <!--<a class="btn-getstarted" href="#about">Get Started</a>-->
+
+      <a class="btn-getstarted" href="#contact">Talk to us</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero/Home Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section lt-hero">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 content-col" data-aos="fade-up">
-            <div class="content">
-              <!--
-              <div class="agency-name">
-                <h5>LeoTrek</h5>
-              </div>
-               --> 
-              <div class="main-heading">
-                <h1 style="font-size: 4rem;">LeoTrek</h1>
+        <div class="row justify-content-center">
+          <div data-aos="fade-up">
+            <div class="lt-hero-shell">
+              <div class="row align-items-center lt-hero-intro">
+                <div class="col-lg-7">
+                  <div class="lt-eyebrow">
+                    <span class="lt-eyebrow-dot"></span>
+                    Orbital AI for urgent response
+                  </div>
+                  <h1 class="lt-hero-title">
+                    Process raw data in orbit before delay becomes damage
+                  </h1>
+                  <p class="lt-hero-copy">
+                    LeoTrek is building a distributed platform for AI workloads across low Earth orbit satellite clusters,
+                    so wildfire monitoring and other time-critical observation missions can move from raw data to
+                    action in minutes.
+                  </p>
+                </div>
+
+                <div class="col-lg-5 lt-hero-figure-col">
+                  <div class="lt-hero-figure" aria-hidden="true">
+                    <img src="assets/img/abstract/background.png" alt="">
+                  </div>
+                </div>
               </div>
 
-              <div class="divider"></div>
-
-              <div class="description">
-                <p>Real-time Intelligence in Space to Preserve Earth</p>
-              </div>
-              
-              <!--
-              <div class="cta-button">
-                <a href="#services" class="btn">
-                  <span>EXPLORE SERVICES</span>
-                  <i class="bi bi-arrow-right"></i>
+              <div class="lt-hero-actions">
+                <a href="mailto:hello@leotrek.ai?subject=LeoTrek%20pilot%20discussion" class="lt-btn lt-btn-primary">
+                  Start a conversation
                 </a>
+                <a href="#research" class="lt-btn lt-btn-secondary">Explore research</a>
               </div>
-              -->
-            </div>
-          </div>
 
-          <div class="col-lg-8" data-aos="zoom-out">
-            <div class="visual-content">
-              <div class="fluid-shape">
-                <img src="assets/img/abstract/background.png" alt="Abstract Fluid Shape" class="fluid-img">
+              <div class="lt-hero-summary" data-aos="fade-up" data-aos-delay="100">
+                <div class="lt-hero-summary-main">
+                  <span class="lt-card-kicker">Mission focus</span>
+                  <h2>Fast orbital processing for wildfire monitoring and rapid alerts.</h2>
+                  <p>Deploy models, fuse sensing modalities, and prioritize urgent insights before full downlink.</p>
+                </div>
+                <div class="lt-hero-summary-stack">
+                  <div class="lt-visual-stack">
+                    <div class="lt-stack-item">
+                      <i class="bi bi-cpu"></i>
+                      <span>In-orbit inference</span>
+                    </div>
+                    <div class="lt-stack-item">
+                      <i class="bi bi-broadcast-pin"></i>
+                      <span>Region-anchored monitoring</span>
+                    </div>
+                    <div class="lt-stack-item">
+                      <i class="bi bi-lightning-charge"></i>
+                      <span>Minutes, not hours</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- Impact Strip -->
-    <section id="cost-of-delay" class="section impact-strip" style="background:#000;">
-
-          <section id="impact" class="offering section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Challenges</h2>
-          <div>
-            <span>The Cost of</span>
-            <span class="description-title">Inaction</span>
-          </div>
-          <p class="text-white-50 mb-0">
-              Wildfires escalate fast. When insights arrive late, the damage multiplies.
-            </p>
+    <section id="mission" class="section lt-story">
+      <div class="container">
+        <div class="lt-section-heading" data-aos="fade-up">
+          <span class="lt-kicker">Mission</span>
+          <h2>Close the loop between sensing and action</h2>
+          <p>
+            Earth observation creates enormous value only when it arrives soon enough to change a decision.
+            LeoTrek shifts compute closer to the sensor so satellite missions can support fast-moving events,
+            persistent regional awareness, and new space-native software workflows.
+          </p>
         </div>
-        <!-- End Section Title -->
 
-
-      <div class="container" data-aos="fade-up">
-        <div class="row g-4 impact-row">
-
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="impact-item text-center">
-              <img src="assets/img/declining_symbol.png" alt="Cost icon" class="impact-icon">
-              <h4 class="impact-title">Human &amp; Economic Toll</h4>
-              <div class="impact-lines">
-                <div>22K early deaths from smoke</div>
-                <div>$215B global wildfire losses</div>
-              </div>
+        <div class="row g-4">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="lt-story-grid lt-story-grid-wide">
+              <article class="lt-story-card">
+                <span class="lt-story-tag">Challenge</span>
+                <h3>Data reaches the ground too late</h3>
+                <p>Downlink, routing, and post-processing add latency when every minute affects response quality.</p>
+              </article>
+              <article class="lt-story-card">
+                <span class="lt-story-tag">Approach</span>
+                <h3>Run urgent inference in orbit</h3>
+                <p>Coordinate AI workloads directly across LEO assets and prioritize what matters most.</p>
+              </article>
+              <article class="lt-story-card">
+                <span class="lt-story-tag">Result</span>
+                <h3>Actionable intelligence sooner</h3>
+                <p>Deliver faster alerts, compressed insights, and better use of limited bandwidth.</p>
+              </article>
+              <article class="lt-story-card">
+                <span class="lt-story-tag">Reach</span>
+                <h3>Beyond wildfires</h3>
+                <p>The same architecture fits disaster response, infrastructure monitoring, and other urgent EO workloads.</p>
+              </article>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section lt-stakes">
+      <div class="container">
+        <div class="lt-section-heading text-center" data-aos="fade-up">
+          <span class="lt-kicker">Why Now</span>
+          <h2>The cost of waiting is measurable</h2>
+          <p>
+            Wildfires are the clearest example of why orbital compute matters. When insight arrives late,
+            damage compounds across human safety, infrastructure, and climate.
+          </p>
+        </div>
+
+        <div class="lt-metric-grid lt-stakes-metrics">
+          <article class="lt-metric-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="lt-metric-value">22K</span>
+            <span class="lt-metric-label">early deaths linked to wildfire smoke</span>
+          </article>
+          <article class="lt-metric-card" data-aos="fade-up" data-aos-delay="150">
+            <span class="lt-metric-value">$215B</span>
+            <span class="lt-metric-label">global wildfire losses each year</span>
+          </article>
+          <article class="lt-metric-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="lt-metric-value">200 → 12,500 ha</span>
+            <span class="lt-metric-label">possible wildfire spread in four hours</span>
+          </article>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="lt-impact-card">
+              <img src="assets/img/declining_symbol.png" alt="Economic impact icon" class="lt-impact-icon">
+              <h3>Human and economic toll</h3>
+              <p>Smoke exposure and damaged infrastructure already turn each fire season into a public-health and budget crisis.</p>
+            </article>
           </div>
 
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="impact-item text-center">
-              <img src="assets/img/fire.png" alt="Fire icon" class="impact-icon">
-              <h4 class="impact-title">Rising Climate Disasters</h4>
-              <div class="impact-lines">
-                <div>3.7M km<sup>2</sup> burned</div>
-                <div>8B tons CO<sub>2</sub></div>
-              </div>
-            </div>
+            <article class="lt-impact-card">
+              <img src="assets/img/fire.png" alt="Wildfire icon" class="lt-impact-icon">
+              <h3>Escalating climate events</h3>
+              <p>Larger burn areas and massive CO<sub>2</sub> release show these events are compounding, not stabilizing.</p>
+            </article>
           </div>
 
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="impact-item text-center">
-              <img src="assets/img/satellite.png" alt="Satellite icon" class="impact-icon">
-              <h4 class="impact-title">Every Minute Counts</h4>
-              <div class="impact-lines">
-                <div>Wildfire from 200 to 12,500 ha</div>
-                <div>in 4 hours</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-         <div class="row">
-          <div class="col-12">
-            <div style="height:60px;"></div>
+            <article class="lt-impact-card">
+              <img src="assets/img/satellite.png" alt="Satellite latency icon" class="lt-impact-icon">
+              <h3>Minutes reshape outcomes</h3>
+              <p>Detection latency changes containment options, dispatch quality, and how much land is ultimately lost.</p>
+            </article>
           </div>
         </div>
 
-        <div class="row mb-5">
-          <div class="col-lg-8">
-            <h3 class="text-white mb-2">Beyond Wildfires</h3>
-            <p class="text-white-50 mb-0">
-              Wildfires are only one example. Many Earth observation use cases depend on
-              decisions made in minutes, not hours.
-            </p>
-          </div>
+        <div class="lt-stakes-note" data-aos="fade-up" data-aos-delay="250">
+          <p>
+            More sensors, stronger onboard compute, and pressure for faster response make this the right moment
+            to move EO intelligence from batch pipelines toward space-native execution.
+          </p>
         </div>
       </div>
     </section>
-<!-- /Impact Strip -->
 
-  <section id="offering" class="services section" style="background-color:#000;">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Our Offering</h2>
-    <div>
-      <span>What We</span>
-      <span class="description-title">Deliver</span>
-    </div>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row align-items-center g-5">
-
-      <!-- Figure -->
-      <div class="col-lg-5 text-center">
-        <img
-          src="assets/img/constellation.png"
-          alt="LeoTrek constellation overview"
-          class="img-fluid"
-          style="max-width: 100%;"
-          loading="lazy"
-        >
-      </div>
-
-      <!-- Offering points -->
-      <div class="col-lg-7">
-
-        <div class="offering-list">
-
-          <div class="offering-item">
-            <h4>Distributed EO Processing in LEO</h4>
-            <p>AI workloads executed directly across clusters of LEO satellites.</p>
-          </div>
-
-          <div class="offering-item">
-            <h4>Earth-Anchored Monitoring</h4>
-            <p>Persistent observation of fixed geographic regions despite satellite motion.</p>
-          </div>
-
-          <div class="offering-item">
-            <h4>Cloud-like Deployments in Space</h4>
-            <p>Select models, data sources, and deploy workflows with minimal effort.</p>
-          </div>
-
-          <div class="offering-item">
-            <h4>Multi-source EO Data Fusion</h4>
-            <p>Combine multi-source data such as thermal and imagery EO data seamlessly.</p>
-          </div>
-
-          <div class="offering-item">
-            <h4>Monetization of Spare Capacity</h4>
-            <p>Enable AI-as-a-Service and custom space applications for satellite operators.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-
-
-    <!-- About Section -->
-    <!--<section id="about" class="about section">-->
-
-      <!-- Section Title -->
-      <!-- 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div><span>Learn More</span> <span class="description-title">About Us</span></div>
-      </div>
-      -->
-      <!-- End Section Title -->
-      <!--
+    <section id="solution" class="section lt-solution">
       <div class="container">
+        <div class="lt-section-heading" data-aos="fade-up">
+          <span class="lt-kicker">Platform</span>
+          <h2>Real-time intelligence in space</h2>
+          <p>
+            LeoTrek is designing a space-native software layer that lets operators deploy,
+            schedule, and evolve EO workloads with far less operational friction.
+          </p>
+        </div>
 
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image position-relative">
-              <img src="assets/img/about/about-portrait-1.webp" class="img-fluid rounded-4 shadow-sm" alt="About Image" loading="lazy">
-              <div class="experience-badge">
-                <span class="years">20+</span>
-                <span class="text">Years of Expertise</span>
-              </div>
+        <div class="row g-4">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="lt-process-board lt-platform-board">
+              <article class="lt-process-card lt-platform-card">
+                <div class="lt-process-card-head">
+                  <span class="lt-step-number">01</span>
+                  <i class="bi bi-cpu lt-process-icon"></i>
+                </div>
+                <h3>Distributed EO processing in LEO</h3>
+                <p>Run inference and filter payloads directly across orbiting satellite clusters, so urgent compute happens near the source.</p>
+              </article>
+              <article class="lt-process-card lt-platform-card">
+                <div class="lt-process-card-head">
+                  <span class="lt-step-number">02</span>
+                  <i class="bi bi-geo-alt lt-process-icon"></i>
+                </div>
+                <h3>Region-anchored monitoring</h3>
+                <p>Keep persistent attention on fixed regions and surface time-critical events as passes occur.</p>
+              </article>
+              <article class="lt-process-card lt-platform-card">
+                <div class="lt-process-card-head">
+                  <span class="lt-step-number">03</span>
+                  <i class="bi bi-diagram-3 lt-process-icon"></i>
+                </div>
+                <h3>Multi-source fusion and orchestration</h3>
+                <p>Coordinate tasks across the constellation and combine thermal, imagery, and contextual streams into one decision layer.</p>
+              </article>
+              <article class="lt-process-card lt-platform-card">
+                <div class="lt-process-card-head">
+                  <span class="lt-step-number">04</span>
+                  <i class="bi bi-cloud-arrow-up lt-process-icon"></i>
+                </div>
+                <h3>Cloud-like deployment model</h3>
+                <p>Deploy selected models and workflows with minimal integration overhead, then return prioritized alerts and outputs to the right teams.</p>
+              </article>
             </div>
-          </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <h2>Elevating Business Performance Through Innovation</h2>
-              <p class="lead">We focus on crafting bespoke strategies that navigate complexity and deliver tangible results for our clients.</p>
-              <p>Through a blend of sophisticated analytics and creative problem-solving, we empower organizations to thrive in rapidly evolving markets.</p>
-
-              <div class="row g-4 mt-3">
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle-fill"></i>
-                    <h5>Dedicated Team Support</h5>
-                    <p>Our highly skilled professionals are committed to providing personalized service and impactful solutions on every engagement.</p>
-                  </div>
-                </div>
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="feature-item">
-                    <i class="bi bi-lightbulb-fill"></i>
-                    <h5>Forward-Thinking Approach</h5>
-                    <p>We embrace innovative methodologies to develop unique strategies that drive lasting success.</p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
+            <div class="lt-solution-note">
+              <strong>Business model potential:</strong>
+              spare onboard compute can become an application layer for satellite operators, enabling AI-as-a-service
+              and custom mission software beyond a single vertical use case.
             </div>
           </div>
         </div>
-      
-        <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-              <div class="testimonial-intro">
-                <h3>Our Clients Speak Highly</h3>
-                <p>Hear directly from those who have experienced the impact of our partnership and achieved their strategic goals.</p>
-                <div class="swiper-nav-buttons mt-4">
-                  <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
-                  <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
-              <div class="testimonial-slider swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 800,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "navigation": {
-                      "nextEl": ".slider-next",
-                      "prevEl": ".slider-prev"
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      }
-                    }
-                  }
-                </script>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"Their strategic vision and unwavering commitment to results provided exceptional value. Our operational efficiency has signficantly improved."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-1.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Eleanor Vance</h6>
-                          <span>Operations Manager</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Collaborating with their team was a revelation. Their innovative strategies guided us toward achieving our objectives with precision and speed."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-m-1.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">David Kim</h6>
-                          <span>Product Lead</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"The depth of knowledge and unwavering dedication they bring to every project is exceptional. They've become an essential ally in driving our expansion."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-2.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Isabella Diaz</h6>
-                          <span>Research Analyst</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Their dedication to delivering superior solutions and their meticulous attention to detail have profoundly impacted our corporate growth trajectory."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-3.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Olivia Chen</h6>
-                          <span>Development Strategist</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        -->
-
       </div>
-
-    </section><!-- /About Section -->
-
-    
-    <!-- Services Section -->
-   <!-- <section id="services" class="services section">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <div><span>Check Our</span> <span class="description-title">Services</span></div>
-      </div>-->
-      <!-- End Section Title -->
-
-      <!--  
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Innovative business</div>
-                  <div><span>performance solutions</span></div>
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
-                </p>
-                <a href="services.html" class="service-btn">
-                  View All Services
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Creative <span>branding</span>
-                </a>
-              </h3>
-              <p>
-                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-gem"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Design <span>systems</span>
-                </a>
-              </h3>
-              <p>
-                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Marketing <span>strategies</span>
-                </a>
-              </h3>
-              <p>
-                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Digital <span>platforms</span>
-                </a>
-              </h3>
-              <p>
-                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Growth <span>acceleration</span>
-                </a>
-              </h3>
-              <p>
-                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl fringilla.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-camera-video"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Media <span>solutions</span>
-                </a>
-              </h3>
-              <p>
-                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>--> <!-- /Services Section -->
-  
-
-    <!-- Steps Section -->
-     <!-- 
-    <section id="steps" class="steps section">
-    -->
-      <!-- Section Title -->
-    <!--
-    
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Steps</h2>
-        <div><span>How we</span> <span class="description-title">Work</span></div>
-      </div>-->
-      <!-- End Section Title -->
-      <!-- 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="steps-wrapper">
-
-          <div class="step-item" data-aos="fade-right" data-aos-delay="200">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-lightbulb"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 01</span>
-                <h3>Initial Consultation</h3>
-                <p>Conducting thorough discovery sessions to understand your business requirements and objectives. Our expert team analyzes your needs to create a customized approach.</p>
-              </div>
-            </div>
-          </div> -->
-          <!-- End Step Item -->
-          <!--
-          <div class="step-item" data-aos="fade-left" data-aos-delay="300">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 02</span>
-                <h3>Planning &amp; Strategy</h3>
-                <p>Developing comprehensive strategies and detailed project plans based on the initial consultation. We create actionable roadmaps with clear milestones and deliverables.</p>
-              </div>
-            </div>
-          </div>
-           -->
-          <!-- End Step Item -->
-          <!--
-          <div class="step-item" data-aos="fade-right" data-aos-delay="400">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-bar-chart"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 03</span>
-                <h3>Development Phase</h3>
-                <p>Executing the planned strategies with precision and agility. Our team implements solutions while maintaining constant communication and progress updates.</p>
-              </div>
-            </div>
-          </div>
-           -->
-          <!-- End Step Item -->
-          <!--
-          <div class="step-item" data-aos="fade-left" data-aos-delay="500">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-check2-circle"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 04</span>
-                <h3>Launch &amp; Support</h3>
-                <p>Ensuring smooth deployment and providing ongoing support for implemented solutions. We monitor performance and make necessary adjustments for optimal results.</p>
-              </div>
-            </div>
-          </div>
-           -->
-          <!-- End Step Item -->
-        <!--
-        </div>-->
-        <!--
-      </div>-->
-      <!--
-    </section>-->
-    <!-- /Steps Section -->
-
-    <!-- Call To Action Section -->
-     <!--
-    <section id="call-to-action" class="call-to-action section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
-
-          <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
-            <span class="badge text-uppercase mb-2">Don't Miss!</span>
-            <h2>Revolutionize Your Digital Experience Today</h2>
-            <p class="my-4">Strategia accelerates your business growth through innovative solutions and cutting-edge technology. Join thousands of satisfied customers who have transformed their operations.</p>
-
-            <div class="features d-flex flex-wrap gap-3 mb-4">
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Premium Support</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Cloud Integration</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Real-time Analytics</span>
-              </div>
-            </div>
-
-            <div class="cta-buttons d-flex flex-wrap gap-3">
-              <a href="#" class="btn btn-primary">Start Free Trial</a>
-              <a href="#" class="btn btn-outline">Learn More</a>
-            </div>
-          </div>
-
-          <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
-            <img src="assets/img/misc/misc-1.webp" alt="Digital Platform" class="img-fluid rounded-4">
-            <div class="floating-card">
-              <div class="card-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <div class="card-content">
-                <span class="stats-number">245%</span>
-                <span class="stats-text">Growth Rate</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="decoration">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-          </div>
-
-        </div>
-
-      </div>
-
     </section>
-    -->
-    <!-- /Call To Action Section -->
 
-    <!-- Testimonials Section -->
-    <!--  <section id="testimonials" class="testimonials section light-background">-->
-
-      <!-- Section Title -->
-      <!--<div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <div><span>Check Our</span> <span class="description-title">Testimonials</span></div>
-      </div>-->
-      <!-- End Section Title -->
-      <!--
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="testimonials-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "slidesPerView": 1,
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>Sed ut perspiciatis unde omnis</h2>
-                    <p>
-                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    </p>
-                    <p>
-                      Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
-                    </p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Saul Goodman</h3>
-                        <span>Client</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>Nemo enim ipsam voluptatem</h2>
-                    <p>
-                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    </p>
-                    <p>
-                      Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
-                    </p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Sara Wilsson</h3>
-                        <span>Designer</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>
-                      Labore nostrum eos impedit
-                    </h2>
-                    <p>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    </p>
-                    <p>
-                      Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
-                    </p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Matt Brandon</h3>
-                        <span>Freelancer</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>Impedit dolor facilis nulla</h2>
-                    <p>
-                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    </p>
-                    <p>
-                      Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
-                    </p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Jena Karlis</h3>
-                        <span>Store Owner</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
+    <section id="use-cases" class="section lt-usecases">
+      <div class="container">
+        <div class="lt-section-heading text-center" data-aos="fade-up">
+          <span class="lt-kicker">Use Cases</span>
+          <h2>Built for more than one emergency</h2>
+          <p>
+            Wildfire monitoring is the immediate wedge, but LeoTrek is relevant wherever Earth observation decisions
+            are time-sensitive and bandwidth is scarce.
+          </p>
         </div>
 
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="lt-usecase-card">
+              <i class="bi bi-fire"></i>
+              <h3>Wildfire response</h3>
+              <p>Prioritize hotspots, fire spread indicators, and response-relevant updates without waiting for full raw-data transfer.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="150">
+            <article class="lt-usecase-card">
+              <i class="bi bi-water"></i>
+              <h3>Disaster monitoring</h3>
+              <p>Support floods, storms, and post-event damage assessment with faster orbital analytics.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+            <article class="lt-usecase-card">
+              <i class="bi bi-shield-check"></i>
+              <h3>Critical infrastructure</h3>
+              <p>Track regions where early anomaly detection matters for energy, logistics, and public safety.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="250">
+            <article class="lt-usecase-card">
+              <i class="bi bi-globe2"></i>
+              <h3>Persistent regional awareness</h3>
+              <p>Keep attention anchored to locations of interest instead of treating every pass as an isolated event.</p>
+            </article>
+          </div>
+        </div>
       </div>
-
-    </section>-->
-    <!-- /Testimonials Section -->
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <div><span>Check Our</span> <span class="description-title">Team</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="team-member d-flex">
-              <div style="width:160px; height:300px; border-radius:12px; overflow:hidden;background:url('assets/img/person/thomas.jpg') center/cover no-repeat;"></div>
-              <div class="member-info flex-grow-1">
-                <h4>Thomas Pusztai</h4>
-                <span></span>
-                <!--<p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>-->
-                <div class="social">
-                  <a href=""><i class="bi bi-globe-americas"></i></a>
-                  <a href="https://www.linkedin.com/in/thomas-pusztai/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex">
-             <div style="width:160px; height:300px; border-radius:12px; overflow:hidden;background:url('assets/img/person/cynthia.png') center/cover no-repeat;"></div>
-              <div class="member-info flex-grow-1">
-                <h4>Cynthia Marcelino</h4>
-                <span></span>
-                <div class="social">
-                  <a href="https://keniack.github.io"><i class="bi bi-globe-americas"></i></a>
-                  <a href="https://www.linkedin.com/in/keniack/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex">
-             <div style="width:160px; height:300px; border-radius:12px; overflow:hidden;background:url('assets/img/person/susanne.png') center/cover no-repeat;"></div>
-              <div class="member-info flex-grow-1">
-                <h4>Susanne Jäger</h4>
-                <span></span>
-                <div class="social">
-                  <a href=""><i class="bi bi-globe-americas"></i></a>
-                  <a href="https://www.linkedin.com/in/susannejaeger/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Publications</h2>
-        <div>
-          <span>Selected</span>
-          <span class="description-title">Research</span>
-        </div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="publication-item">
-              <h5>
-                Hyperdrive: Scheduling Serverless Functions in the Edge-Cloud-Space 3D Continuum
-              </h5>
-              <p class="publication-meta">
-                IEEE/ACM Symposium on Edge Computing (SEC), 2024
-              </p>
-              <a href="https://arxiv.org/pdf/2410.16026" class="publication-link">Read paper</a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="publication-item">
-              <h5>
-                Stardust: A Scalable and Extensible Simulator for the 3D Continuum
-              </h5>
-              <p class="publication-meta">
-                IEEE International Conference on Edge Computing and Communications (EDGE), 2025
-              </p>
-              <a href="https://arxiv.org/pdf/2506.01513" class="publication-link">Read paper</a>
-            </div>
-          </div>
-          <div class="row gy-4">
-
-            <div class="col-lg-6">
-              <div class="publication-item">
-                <h5>
-                  Databelt: A continuous data path for serverless workflows in the 3D compute continuum
-                </h5>
-                <p class="publication-meta">
-                  Journal of Systems Architecture, 2025
-                </p>
-                <a href="https://doi.org/10.1016/j.sysarc.2025.103577" class="publication-link">Read paper</a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="publication-item">
-                <h5>
-                  Cosmos: A Cost Model for Serverless Workflows in the 3D Compute Continuum
-                </h5>
-                <p class="publication-meta">
-                  IEEE SmartComp, 2025
-                </p>
-                <a href="https://arxiv.org/pdf/2504.20189" class="publication-link">Read paper</a>
-              </div>
-            </div>
-        </div>
-
-        <div class="row gy-4">
-
-            <div class="col-lg-6">
-              <div class="publication-item">
-                <h5>
-                  Gaia: Hybrid Hardware Acceleration for Serverless AI in the 3D Compute Continuum
-                </h5>
-                <p class="publication-meta">
-                  IEEE/ACM 12th International Conference on Big Data Computing, Applications and Technologies, 2025
-                </p>
-                <a href="https://dl.acm.org/doi/10.1145/3773276.3774299" class="publication-link">Read paper</a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="publication-item">
-                <h5>
-                  Currus - A Compound AI Approach to Distributed Vehicle Trajectory Reconstruction in the Edge-Cloud
-                </h5>
-                <p class="publication-meta">
-                  International Conference on the Internet of Things, 2025
-                </p>
-                <a href="https://doi.org/10.1145/3770501.3770531" class="publication-link">Read paper</a>
-              </div>
-            </div>
-        </div>
-
-      </div>
-
     </section>
-    <!-- /Publications Section -->
 
-
-    <!-- Contact Section -->
-    <!--
-    <section id="contact" class="contact section">-->
-
-      <!-- Section Title -->
-       <!--
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Let's</span> <span class="description-title">Connect</span></div>
-      </div>--><!-- End Section Title -->
-
-      <!--  <div class="container" data-aos="fade-up" data-aos-delay="100">-->
-
-        <!-- Contact Info Boxes -->
-         <!--        <div class="row gy-4 mb-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4>Our Address</h4>
-                <p>1842 Maple Avenue, Portland, Oregon 97204</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="info-content">
-                <h4>Email Address</h4>
-                <p>info@example.com</p>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="info-content">
-                <h4>Hours of Operation</h4>
-                <p>Sunday-Fri: 9 AM - 6 PM</p>
-                <p>Saturday: 9 AM - 4 PM</p>
-              </div>
-            </div>
-          </div>
+    <section id="research" class="section lt-research">
+      <div class="container">
+        <div class="lt-section-heading" data-aos="fade-up">
+          <span class="lt-kicker">Research</span>
+          <h2>Grounded in the Edge-Cloud Continuum Research</h2>
+          <p>
+            LeoTrek builds on published work in scheduling, serverless workflows,
+            simulation, cost modeling, and hardware acceleration for AI workloads.
+          </p>
         </div>
 
-      </div>
-      -->
-
-      <!-- Google Maps (Full Width) -->
-       <!--
-      <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    -->
-
-      <!-- Contact Form Section (Overlapping) -->
-       <!--
-  
-      <div class="container form-container-overlap">
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-10">
-            <div class="contact-form-wrapper">
-              <h2 class="text-center mb-4">Get in Touch</h2>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-person"></i>
-                        <input type="text" class="form-control" name="name" placeholder="First Name" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-text-left"></i>
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-chat-dots message-icon"></i>
-                        <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">IEEE/ACM SEC 2024</span>
+              <h3>Hyperdrive</h3>
+              <p>Scheduling serverless functions across orbital and ground-adjacent compute layers. IEEE/ACM SEC, 2024.</p>
+              <a href="https://arxiv.org/pdf/2410.16026" target="_blank" rel="noopener">Read paper</a>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">IEEE EDGE 2025</span>
+              <h3>Stardust</h3>
+              <p>A scalable simulator for multi-layer distributed computing environments. IEEE EDGE, 2025.</p>
+              <a href="https://arxiv.org/pdf/2506.01513" target="_blank" rel="noopener">Read paper</a>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">Elsevier Journal of Systems Architecture 2025</span>
+              <h3>Databelt</h3>
+              <p>A continuous data path for serverless workflows across distributed compute tiers. Journal of Systems Architecture, 2025.</p>
+              <a href="https://doi.org/10.1016/j.sysarc.2025.103577" target="_blank" rel="noopener">Read paper</a>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">IEEE SmartComp 2025</span>
+              <h3>Cosmos</h3>
+              <p>A cost model for serverless workflows spanning multiple compute layers. IEEE SmartComp, 2025.</p>
+              <a href="https://arxiv.org/pdf/2504.20189" target="_blank" rel="noopener">Read paper</a>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">IEEE/ACM BDCAT 2025</span>
+              <h3>Gaia</h3>
+              <p>Hybrid hardware acceleration for serverless AI in distributed compute environments. IEEE/ACM BDCAT, 2025.</p>
+              <a href="https://dl.acm.org/doi/10.1145/3773276.3774299" target="_blank" rel="noopener">Read paper</a>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="lt-paper-card">
+              <span class="lt-paper-tag">ACM IoT 2025</span>
+              <h3>Currus</h3>
+              <p>A compound AI approach to distributed vehicle trajectory reconstruction. International Conference on the Internet of Things, 2025.</p>
+              <a href="https://doi.org/10.1145/3770501.3770531" target="_blank" rel="noopener">Read paper</a>
+            </article>
           </div>
         </div>
-
       </div>
-
-    </section>-->
-    <!-- /Contact Section -->
-     <!-- Partners Section -->
-    
-    <section id="partners" class="section light-background" style="background-color:#000;">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Partners</h2>
-        <div><span>Our</span> <span class="description-title">Partners</span></div>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-4 align-items-center justify-content-center partners-logos">
-        <div class="col-6 col-md-4 col-lg-3 text-center">
-          <img
-            src="assets/img/i2c-Logo-white.png"
-            alt="Partner 1"
-            class="partner-logo img-fluid"
-            loading="lazy"
-          >
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 text-center">
-          <img
-            src="assets/img/Deep-Tech-Pioneers_White.png"
-            alt="Partner 2"
-            width="150"
-            class="partner-logo img-fluid"
-            loading="lazy"
-          >
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 text-center">
-          <img
-            src="assets/img/FFG_Logo_EN_white.png"
-            alt="Partner 2"
-            class="partner-logo img-fluid"
-            loading="lazy"
-          >
-        </div>
-      </div>
-    </div>
-
     </section>
-    
-    <!-- /Partners Section -->
+
+    <section id="team" class="section lt-team">
+      <div class="container">
+        <div class="lt-section-heading text-center" data-aos="fade-up">
+          <span class="lt-kicker">Team</span>
+          <h2> Team with deep-tech and financial expertise</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="lt-team-card">
+              <div class="lt-team-photo-wrap">
+                <img src="assets/img/person/thomas.jpg" alt="Thomas Pusztai" class="lt-team-photo" loading="lazy">
+              </div>
+              <div class="lt-team-card-body">
+                <h3>Thomas Pusztai</h3>
+                <div class="lt-team-links">
+                  <a href="https://www.linkedin.com/in/thomas-pusztai/" target="_blank" rel="noopener" aria-label="Thomas Pusztai on LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="150">
+            <article class="lt-team-card">
+              <div class="lt-team-photo-wrap">
+                <img src="assets/img/person/cynthia.png" alt="Cynthia Marcelino" class="lt-team-photo" loading="lazy">
+              </div>
+              <div class="lt-team-card-body">
+                <h3>Cynthia Marcelino</h3>
+                <div class="lt-team-links">
+                  <a href="https://www.linkedin.com/in/keniack/" target="_blank" rel="noopener" aria-label="Cynthia Marcelino on LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <article class="lt-team-card">
+              <div class="lt-team-photo-wrap">
+                <img src="assets/img/person/susanne.png" alt="Susanne Jäger" class="lt-team-photo" loading="lazy">
+              </div>
+              <div class="lt-team-card-body">
+                <h3>Susanne Jäger</h3>
+                <div class="lt-team-links">
+                  <a href="https://www.linkedin.com/in/susannejaeger/" target="_blank" rel="noopener" aria-label="Susanne Jäger on LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section lt-contact">
+      <div class="container">
+        <div class="lt-section-heading" data-aos="fade-up">
+          <span class="lt-kicker">Contact</span>
+          <h2>Open to pilot programs, operator partnerships, and research collaboration</h2>
+        </div>
+
+        <div class="lt-contact-panel" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-start g-4">
+            <div class="col-lg-7">
+              <p class="lt-contact-intro">
+                LeoTrek is interested in pilot deployments, operator partnerships, commercial validation,
+                and research collaboration around time-critical orbital intelligence.
+              </p>
+              <div class="lt-contact-pills">
+                <span>LEO operators</span>
+                <span>Emergency response</span>
+                <span>Research partners</span>
+                <span>Investors</span>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="lt-contact-card">
+                <div class="lt-contact-row">
+                  <span class="lt-contact-label">Email</span>
+                  <a href="mailto:hello@leotrek.ai">hello@leotrek.ai</a>
+                </div>
+                <div class="lt-contact-row">
+                  <span class="lt-contact-label">Location</span>
+                  <span>Taubstummengasse 11, 1040 Vienna, Austria</span>
+                </div>
+                <div class="lt-contact-row">
+                  <span class="lt-contact-label">GitHub</span>
+                  <a href="https://github.com/leotrek" target="_blank" rel="noopener">github.com/leotrek</a>
+                </div>
+                <div class="lt-contact-actions">
+                  <a href="mailto:hello@leotrek.ai?subject=LeoTrek%20pilot%20discussion" class="lt-btn lt-btn-primary">
+                    Email LeoTrek
+                  </a>
+                  <a href="https://github.com/leotrek" target="_blank" rel="noopener" class="lt-btn lt-btn-secondary">
+                    View GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lt-partner-band" aria-label="Partner ecosystem">
+      <div class="container">
+        <div class="lt-partner-band-inner" data-aos="fade-up">
+          <p class="lt-partner-label">Part of the European deep-tech ecosystem</p>
+          <div class="row g-4 align-items-center justify-content-center partners-logos">
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <img src="assets/img/i2c-Logo_White.png" alt="i2c partner logo" class="partner-logo img-fluid" loading="lazy">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <img src="assets/img/Deep-Tech-Pioneers_White.png" alt="Deep Tech Pioneers partner logo" class="partner-logo img-fluid" loading="lazy">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <img src="assets/img/FFG_Logo_EN_white.png" alt="FFG partner logo" class="partner-logo img-fluid" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer lt-footer">
 
     <div class="container footer-top">
-      <div class="row gy-4">
+      <div class="row gy-4 align-items-start">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">LeoTrek</span>
           </a>
-           <p>Taubstummengasse 11<br>
-          1040 Vienna, Austria</p>
+          <p>
+            Real-time intelligence in space for urgent Earth observation decisions.
+          </p>
           <div class="social-links d-flex mt-4">
-            <a href="https://github.com/leotrek"><i class="bi bi-github"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/leotrek" target="_blank" rel="noopener" aria-label="LeoTrek on GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/leotrek/" target="_blank" rel="noopener" aria-label="LeoTrek on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hello@leotrek.ai" aria-label="Email LeoTrek">
+              <i class="bi bi-envelope"></i>
+            </a>
           </div>
         </div>
-        
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Navigate</h4>
           <ul>
-        <!--    
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            -->
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#solution">Platform</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Legal</h4>
+          <ul>
             <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
-        <!--
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <p>Coming Soon.</p>
-          
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-      -->
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p><a href="mailto:hello@leotrek.ai">hello@leotrek.ai</a></p>
+
+        <div class="col-lg-2 col-md-12 footer-contact text-md-start">
+          <h4>Address</h4>
           <p>Taubstummengasse 11</p>
           <p>1040 Vienna, Austria</p>
-
-          <!--<p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
-        -->
         </div>
-
       </div>
     </div>
 
@@ -1319,22 +580,14 @@
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
