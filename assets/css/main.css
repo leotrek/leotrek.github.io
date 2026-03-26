@@ -4540,17 +4540,6 @@ body.lt-site .hero .container {
   overflow: hidden;
 }
 
-.lt-process-card::after {
-  content: "";
-  position: absolute;
-  right: -38px;
-  bottom: -38px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(98, 211, 255, 0.18), transparent 70%);
-}
-
 .lt-process-card-head {
   display: flex;
   align-items: center;
@@ -4928,6 +4917,24 @@ body.lt-site .hero .container {
   text-transform: uppercase;
 }
 
+.lt-paper-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.lt-paper-tag-group .lt-paper-tag {
+  margin-bottom: 0;
+}
+
+.lt-paper-tag-highlight {
+  background: linear-gradient(135deg, var(--accent-color), #ffd88c);
+  color: var(--contrast-color);
+  box-shadow: 0 12px 28px rgba(255, 180, 74, 0.2);
+}
+
 .lt-paper-card h3 {
   margin: 0 0 0.85rem;
   font-size: 1.16rem;
@@ -4940,7 +4947,7 @@ body.lt-site .hero .container {
   line-height: 1.65;
 }
 
-.lt-paper-card a {
+.lt-paper-card > a {
   margin-top: auto;
   color: var(--heading-color);
   font-weight: 700;
@@ -4948,6 +4955,10 @@ body.lt-site .hero .container {
 
 .lt-paper-card a:hover {
   color: var(--accent-color);
+}
+
+.lt-paper-tag-highlight:hover {
+  color: var(--contrast-color);
 }
 
 .lt-team {
