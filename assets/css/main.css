@@ -4965,6 +4965,11 @@ body.lt-site .hero .container {
   background: linear-gradient(180deg, rgba(9, 18, 30, 0.94), rgba(8, 17, 29, 0.74));
 }
 
+.lt-advisors {
+  padding-top: 28px;
+  background: linear-gradient(180deg, rgba(8, 17, 29, 0.74), rgba(9, 18, 30, 0.94));
+}
+
 .lt-team-card {
   display: flex;
   flex-direction: column;
@@ -5036,6 +5041,58 @@ body.lt-site .hero .container {
   border-color: rgba(255, 180, 74, 0.3);
   background: rgba(255, 180, 74, 0.12);
   color: var(--accent-color);
+}
+
+.lt-advisor-card {
+  min-height: 100%;
+}
+
+.lt-advisor-photo-wrap {
+  height: 320px;
+}
+
+.lt-advisor-placeholder {
+  display: grid;
+  place-items: center;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at top, rgba(98, 211, 255, 0.2), transparent 62%),
+    rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 4rem;
+}
+
+.lt-advisor-placeholder .lt-team-photo {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.lt-advisor-card-body {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.lt-advisor-card-body h3 a {
+  color: inherit;
+}
+
+.lt-advisor-card-body h3 a:hover {
+  color: var(--accent-color);
+}
+
+.lt-advisor-card-body p {
+  margin: 0;
+  color: var(--default-color);
 }
 
 .lt-contact {
