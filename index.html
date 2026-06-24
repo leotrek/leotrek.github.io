@@ -260,8 +260,8 @@
           <span class="lt-kicker">Platform</span>
           <h2>Real-time intelligence in space</h2>
           <p>
-            LeoTrek is designing a space-native orchestrator that lets EO developers deploy,
-            schedule, and evolve EO workloads with far less operational friction.
+            LeoTrek is designing a space-native orchestration layer for deploying,
+            scheduling, and validating EO workloads across available orbital compute.
           </p>
         </div>
 
@@ -297,34 +297,34 @@
                   <span class="lt-step-number">04</span>
                   <i class="bi bi-cloud-arrow-up lt-process-icon"></i>
                 </div>
-                <h3>Mission-free deployment</h3>
-                <p>Deploy selected models and workflows without rebuilding the stack for each mission profile, then return prioritized alerts and outputs to the right teams.</p>
+                <h3>Cloud-like workflow deployment</h3>
+                <p>Deploy models and workflows through a consistent interface instead of rebuilding software for each mission profile or satellite configuration.</p>
               </article>
               <article class="lt-process-card lt-platform-card">
                 <div class="lt-process-card-head">
                   <span class="lt-step-number">05</span>
-                  <i class="bi bi-check2-circle lt-process-icon"></i>
+                  <i class="bi bi-bezier2 lt-process-icon"></i>
                 </div>
-                <h3>Simulation and validation</h3>
-                <p>Test mission logic, workload placement, and model behavior before deployment so operators can validate latency, throughput, and operational tradeoffs earlier.</p>
+                <h3>Space digital twin</h3>
+                <p>Model mission logic, workload placement, and orbital constraints before deployment so teams can validate latency, throughput, and failure behavior earlier.</p>
               </article>
               <article class="lt-process-card lt-platform-card">
                 <div class="lt-process-card-head">
                   <span class="lt-step-number">06</span>
-                  <i class="bi bi-box-seam lt-process-icon"></i>
+                  <i class="bi bi-sliders2 lt-process-icon"></i>
                 </div>
-                <h3>Off-the-shelf AI services</h3>
-                <p>Offer reusable optimization and inference services such as pruning, quantization, and deployment-ready packaging without requiring every team to build custom software stacks from scratch.</p>
+                <h3>AI workflow optimization</h3>
+                <p>Prepare inference pipelines with pruning, quantization, and deployment-ready tuning so models fit onboard constraints without custom tooling each time.</p>
               </article>
             </div>
 
             <div class="lt-simulation-panel">
               <div class="lt-simulation-panel-head">
                 <div>
-                  <span class="lt-card-kicker">Scenario Preview</span>
-                  <h3>Local orbit simulation</h3>
+                  <span class="lt-card-kicker">Digital Twin</span>
+                  <h3>Mission simulation in context</h3>
                   <p>
-                    A compact view of orbit nodes, assigned workflows, and computation moving inside the target area before full downlink.
+                    Preview orbit nodes, workflow placement, and computation moving inside the target area before live deployment.
                   </p>
                 </div>
 
@@ -383,13 +383,63 @@
                 </aside>
               </div>
             </div>
-
-            <div class="lt-solution-note">
-              <strong>Business model potential:</strong>
-              spare onboard compute can become an application layer for satellite operators, enabling AI-as-a-service
-              and custom mission software beyond a single vertical use case.
-            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="customers" class="section lt-audience">
+      <div class="container">
+        <div class="lt-section-heading text-center" data-aos="fade-up">
+          <span class="lt-kicker">Who We Serve</span>
+          <h2>Built for both sides of the EO ecosystem</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="lt-audience-card">
+              <div class="lt-audience-icon">
+                <i class="bi bi-broadcast-pin"></i>
+              </div>
+              <span class="lt-story-tag">EO applications</span>
+              <h3>EO service providers and platforms</h3>
+              <p>
+                Service providers that need EO insights
+                fast enough to support operational decisions while satellite data is still time-critical.
+              </p>
+              <ul class="lt-audience-list">
+                <li>Get detection and mapping results within minutes instead of waiting for full downlink and ground processing.</li>
+                <li>Scale AI workflows beyond a single satellite with more predictable latency and execution behavior.</li>
+                <li>Combine onboard EO data with third-party sources without routing every workload through cloud pipelines.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="lt-audience-card">
+              <div class="lt-audience-icon">
+                <i class="bi bi-hdd-network"></i>
+              </div>
+              <span class="lt-story-tag">Orbital infrastructure</span>
+              <h3>LEO satellite operators</h3>
+              <p>
+                Operators with software-defined satellites can use LeoTrek to expose spare in-orbit
+                capacity through a multi-tenant AI-as-a-service model without disrupting primary missions.
+              </p>
+              <ul class="lt-audience-list">
+                <li>Monetize unused onboard compute and differentiate with value-added services.</li>
+                <li>Offer a lower-friction interface for external AI workloads and multi-tenant access.</li>
+                <li>Keep operational safeguards in place through orchestration, admission control, and mission-aware scheduling.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="lt-audience-note" data-aos="fade-up" data-aos-delay="200">
+          <p>
+            LeoTrek connects both sides: EO providers deploy workflows through a cloud-like interface,
+            satellite operators supply the compute layer, and LeoTrek handles orchestration across available capacity.
+          </p>
         </div>
       </div>
     </section>

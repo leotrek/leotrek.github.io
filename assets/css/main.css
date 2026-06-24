@@ -4430,6 +4430,7 @@ body.lt-site .hero .container {
 .lt-story-card,
 .lt-impact-card,
 .lt-process-card,
+.lt-audience-card,
 .lt-usecase-card,
 .lt-paper-card,
 .lt-team-card,
@@ -4583,13 +4584,82 @@ body.lt-site .hero .container {
   line-height: 1.68;
 }
 
-.lt-solution-note {
-  margin-top: 1.2rem;
-  padding: 1rem 1.25rem;
-  border-left: 3px solid var(--accent-color);
-  border-radius: 0 18px 18px 0;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(236, 243, 252, 0.76);
+.lt-audience {
+  background: linear-gradient(180deg, rgba(8, 17, 29, 0.94), rgba(11, 22, 35, 0.78));
+}
+
+.lt-audience-card {
+  height: 100%;
+  padding: 1.7rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(14, 26, 41, 0.84), rgba(9, 18, 30, 0.78));
+}
+
+.lt-audience-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  background: rgba(98, 211, 255, 0.12);
+  color: #b7edff;
+  font-size: 1.4rem;
+}
+
+.lt-audience-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.lt-audience-card p {
+  margin: 0;
+  color: rgba(236, 243, 252, 0.72);
+  line-height: 1.72;
+}
+
+.lt-audience-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lt-audience-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: rgba(236, 243, 252, 0.78);
+  line-height: 1.72;
+}
+
+.lt-audience-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72rem;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.lt-audience-list li + li {
+  margin-top: 0.7rem;
+}
+
+.lt-audience-note {
+  max-width: 940px;
+  margin: 1.5rem auto 0;
+  padding: 1.15rem 1.35rem;
+  border: 1px solid rgba(98, 211, 255, 0.16);
+  border-radius: 22px;
+  background: rgba(98, 211, 255, 0.06);
+}
+
+.lt-audience-note p {
+  margin: 0;
+  text-align: center;
+  color: rgba(236, 243, 252, 0.8);
   line-height: 1.72;
 }
 
@@ -5417,6 +5487,7 @@ body.lt-site #preloader {
   .lt-partner-band-inner,
   .lt-impact-card,
   .lt-process-card,
+  .lt-audience-card,
   .lt-paper-card,
   .lt-contact-panel {
     border-radius: 4px;
@@ -5448,6 +5519,7 @@ body.lt-site #preloader {
   }
 
   .lt-usecase-card,
+  .lt-audience-card,
   .lt-story-card,
   .lt-contact-card {
     padding: 1.2rem;
