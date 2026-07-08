@@ -1,0 +1,106 @@
+  [
+    {
+      "slug": "smallsat-workshop",
+      "date": "2026-03-10",
+      "category": "Conference",
+      "title": "LeoTrek Workshop on Small Satellites: Environmental Testing in New Space",
+      "summary": "LeoTrek founders attended the Workshop on Small Satellites hosted by the University of Applied Sciences Fachhochschule Wiener Neustadt.",
+      "image": "content/news/images/26-03.2-smallsat-noe.jpg",
+      "image_alt": "LeoTrek at Workshop on Small Satellites: Environmental Testing in New Space",
+      "external_url": "https://www.linkedin.com/posts/thomas-pusztai_satellites-constellations-ai-ugcPost-7438260632501645317-t_6Z/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAf832QBvTVwFeZ1y70e2B5cXErhIoEemNE",
+      "external_label": "Read more",
+      "content": [
+        "Among the topics was the current shift from large and very expensive (100s of millions of $) satellites to mass-produced, relatively inexpensive (1 to a few million $) satellites that are used for building large constellations. Another topic was the use of commercial off-the-shelf components, which further aid in cost reduction.",
+        "While large and expensive satellites will always be part of humanity's presence in space, mass-produced #satellites in #constellations will likely amount for the majority of this industry in the future.",
+        "Our LeoTrek #AI-as-a-Service platform aims specifically at these large constellations, which form a powerful computing infrastructure in orbit. Leveraging this potential for the processing of #EarthObservation data, which keeps increasing in resolution and volume, enables us to derive real-time intelligence from this data. This intelligence can save lives and prevent damages when disasters strike. Furthermore, it creates a fruitful base for innovative services that can improve all our lives, similar to how satellite navigation has done in the past.",
+        "LeoTrek's goal is to enable these live-saving and innovative services with our AI-as-a-Service platform with end-to-end performance guarantees."
+      ]
+    },
+    {
+    "slug": "orbit-workshop",
+    "date": "2026-04-10",
+    "category": "Public Talk",
+    "title": "LeoTrek Workshop on Small Satellites: Environmental Testing in New Space",
+    "summary": "LeoTrek AI-as-a-Service platform for #satellites at the Workshop Orbit Österreich organized by Fraunhofer Austria. LeoTrek was part of a set of exciting topic pitches that presented future avenues for the Austrian space economy.",
+    "image": "content/news/images/26-04-space-workshop.jpg",
+    "image_alt": "LeoTrek at Workshop on Small Satellites: Environmental Testing in New Space",
+    "external_url": "https://indico.global/event/16296/",
+    "external_label": "Read more",
+    "content": [
+      "Our Co-founders Thomas Pusztai presented our LeoTrek AI-as-a-Service platform for #satellites at the Workshop Orbit Österreich organized by Fraunhofer Austria. LeoTrek was part of a set of exciting topic pitches that presented future avenues for the Austrian space economy.",
+      "In the afternoon we got together in small groups to discuss challenges for upstream (satellite components, etc.), in-orbit (operation, communication & data transfer), and downstream space segments, possible solutions, and how Austria can play a role in these solutions.",
+      "The growing volume of #EarthObservation (EO) data came up for both, the in-orbit and downstream segments. The two solutions that were discussed for this problem were compression and in-orbit AI. With the LeoTrek platform we are working on delivering an easy to use AI-as-a-Service system that will not just offer in-orbit AI on single satellites, but across entire constellations to deliver EO-based intelligence in minutes instead of hours."
+    ]
+  },
+  {
+    "slug": "copuos",
+    "date": "2026-06-15",
+    "category": "Public Talk",
+    "title": "LeoTrek Presentation at UNOOSA COPUOS",
+    "summary": "Being invited to present our work for fighting natural disasters using real-time intelligence from space at the UNOOSA COPUOS general assembly was a great honor.",
+    "image": "content/news/images/26-06-copuos.jpg",
+    "image_alt": "LeoTrek at UNOOSA COPUOS",
+    "external_url": "https://www.linkedin.com/posts/leotrek_realtime-earthobservation-activity-7472643906107555840-z7a1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAf832QBvTVwFeZ1y70e2B5cXErhIoEemNE",
+    "external_label": "Read more",
+    "content": [
+      "Our Co-founders Thomas Pusztai and Cynthia Marcelino had the great honor to present our work on “AI-as-a-Service in Space for Real-time Earth Observation Intelligence” in a technical presentation at the 69th United Nations Office for Outer Space Affairs (UNOOSA) COPUOS meeting. Some of the topics discussed today included climate change and space technology spinoffs. This makes our talk on the LeoTrek platform a suitable complement to the main program.",
+      "Fighting the increasing number of natural disasters requires  realtime  EarthObservation intelligence from space. That is the goal of our LeoTrek platform, which will not only deliver a best effort, but hard end-to-end execution time guarantees. Since we are not tied to a particular hardware manufacturer, our platform will not only be compatible with various satellite operators, but it will also enable small operators to join forces by creating interconnected clusters, thus realizing the cooperative aspect that has been a core aspect of human space exploration for decades.",
+      "We would like to express our sincere gratitude to the Bundesministerium für europäische und internationale Angelegenheiten (MFA Austria), the Bundesministerium für Innovation, Mobilität und Infrastruktur as well as the ESA Phi-Lab Austria for giving us the amazing opportunity to present here."
+    ]
+  },
+  {
+    "slug": "insideout-summit",
+    "date": "2026-05-21",
+    "category": "Conference",
+    "title": "LeoTrek at ViennaUP 2026",
+    "summary": "LeoTrek had the opportunity to attend INSIDEOUT Summit 2026",
+    "image": "content/news/images/26-05.2-insideout-summit.png",
+    "image_alt": "LeoTrek at ViennaUP",
+    "content": [
+      "Excited to share that LeoTrek had the opportunity to attend INSIDEOUT Summit 2026 on May 21 in Vienna as part of ViennaUP ✨For LeoTrek founders Thomas Pusztai and Cynthia Marcelino, the event was a great opportunity to exchange ideas around human-centered innovation, neuroscience \uD83E\uDDE0, purposeful technology, and meaningful human connection \uD83E\uDD1D.\n\nWe truly enjoyed connecting with innovators, entrepreneurs, and creatives who are shaping the future in a more human way.\n\nThank you to tech2impact and Mastercard for organizing such a meaningful event \uD83D\uDE80\n"
+    ]
+  },
+  {
+    "slug": "esa-eocomm",
+    "date": "2026-05-04",
+    "category": "Conference",
+    "title": "LeoTrek at ESA EOComm 2026",
+    "summary": "Many messages we heard at the forum in Sevilla fit well into LeoTrek's vision, especially: An important factor for the future will be to process and fuse large amounts of EO data in real-time",
+    "image": "content/news/images/26-05.1-eo-comm.png",
+    "image_alt": "LeoTrek at EO Comm",
+    "content": [
+      "We are excited to be at the 3rd EO Commercialization Forum of the European Space Agency - ESA. In the panel discussions and our talks with various people we see a lot of tailwind for what we are building with the LeoTrek software platform for  distributed hashtag AI-as-a-Service in space. Some key takeaways of the first two days: EarthObservation has moved into the EarthIntelligence era. It is no longer the goal to serve only a number of experts, but to provide EO-based services for a wide range of end users, from government authorities (e.g., disaster response) to the general public (e.g., farmers). An important factor for the future will be to process and fuse large amounts of EO data in real-time.\n- Not all companies who would like to run analysis in space can afford their own satellites. Rentable capacities are a possible solution, but secure multi-tenancy is necessary to make this work.\n- AI-as-a-Service is part of the future. Europe has a lot of potential for global success in EO, but it must be leveraged in time and supported."
+    ]
+  },
+  {
+    "slug": "ui-demo",
+    "date": "2026-03-01",
+    "category": "Product",
+    "title": "LeoTrek UI Demo",
+    "summary": "The demo of the LeoTrek platform's UI is publicly available. Create and edit sample workflows and see how deployments on satellites will be simulated and executed.",
+    "image": "content/news/images/26-03.1-ui-demo.jpg",
+    "image_alt": "LeoTrek UI Demo",
+    "content": [
+      "The demo of the LeoTrek platform's UI is publicly available. Create and edit sample workflows and see how deployments on satellites will be simulated and executed."
+    ]
+  },
+  {
+    "slug": "satshow-week",
+    "date": "2026-03-23",
+    "category": "Conference",
+    "title": "LeoTrek at SatShow 2026 in Washington, DC",
+    "summary": "We had an amazing and very beneficial time visiting SATShow Week.",
+    "image": "content/news/images/26-03.3-sat-show.jpg",
+    "image_alt": "Thomas Pusztai and the Austrian delegation in the SATShow Week",
+    "content": [
+      "We had an amazing and very beneficial time visiting SATShow Week. In my talks with various companies at the fair I was able to confirm many of our assumptions that we use for the design of our LeoTrek platform",
+      " - Earth Observation (#EO) data volume is increasing, requiring novel ways of processing.",
+      "- In-orbit #AI plays a big role in many solution approaches.",
+      "- New satellite generations feature powerful processing hardware and unlock in-orbit AI.",
+      "- Inter-satellite laser links (#ISLs) are becoming more common and enable high bandwidth data exchange between satellites.",
+      "- Multiple companies are working on orbital data centers and/or in-orbit processing of EO data.",
+
+      "With the LeoTrek AI-as-a-Service (#AIaaS) platform we leverage the advancements in hardware and go beyond what many plan on the software side. We not only deliver full workflow support, but we also give real-time KPI guarantees based on the hardware and we enable dynamic mission-free deployments."
+    ]
+  }
+]
