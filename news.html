@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LeoTrek News</title>
+  <meta
+    name="description"
+    content="News, product updates, and research milestones from LeoTrek."
+  >
+  <meta
+    name="keywords"
+    content="LeoTrek news, LeoTrek updates, space AI news, Earth observation updates"
+  >
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet"
+  >
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260708-8" rel="stylesheet">
+</head>
+
+<body class="lt-site news-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png" alt="LeoTrek logo">
+        <h1 class="sitename">LeoTrek</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu" aria-label="Primary navigation">
+        <ul id="navmenu-list">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#impact">Why Now</a></li>
+          <li><a href="index.html#platform">Platform</a></li>
+          <li><a href="index.html#use-cases">Use Cases</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="news.html" class="active">News</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none bi bi-list"
+          aria-controls="navmenu-list"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="header-action btn-getstarted"
+          href="https://app.leotrek.ai"
+          target="_blank"
+          rel="noopener"
+        >
+          Try it
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section lt-news-page-hero">
+      <div class="container">
+        <div class="lt-news-page-intro" data-aos="fade-up">
+          <span class="lt-kicker">News</span>
+          <h1>LeoTrek updates</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lt-news-directory-section" data-news-directory-section>
+      <div class="container">
+        <div class="lt-news-grid lt-news-grid--directory" data-news-page-list aria-live="polite">
+          <article class="lt-news-card lt-news-card--message" data-aos="fade-up" data-aos-delay="100">
+            <p>Loading updates...</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lt-news-article-page" data-news-article-page hidden>
+      <div class="container">
+        <a href="news.html" class="lt-news-back-link" data-news-back-link>
+          <i class="bi bi-arrow-left"></i>
+          All news
+        </a>
+
+        <article class="lt-news-article-shell">
+          <div class="lt-news-meta">
+            <span class="lt-news-category" data-news-article-category>News</span>
+            <time class="lt-news-date" data-news-article-date></time>
+          </div>
+
+          <h1 class="lt-news-article-title" data-news-article-title>Loading article...</h1>
+          <p class="lt-news-article-summary" data-news-article-summary></p>
+
+          <figure class="lt-news-article-image-wrap" data-news-article-image-wrap hidden>
+            <img src="" alt="" class="lt-news-article-image" data-news-article-image>
+          </figure>
+
+          <div class="lt-news-article-content" data-news-article-content></div>
+
+          <div class="lt-news-article-actions">
+            <a
+              href="#"
+              class="lt-btn lt-btn-secondary"
+              data-news-article-external
+              hidden
+              target="_blank"
+              rel="noopener"
+            >
+              Read more
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer lt-footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4 align-items-start">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">LeoTrek</span>
+          </a>
+          <p>
+            Real-time intelligence in space for urgent Earth observation decisions
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://github.com/leotrek" target="_blank" rel="noopener" aria-label="LeoTrek on GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/leotrek/" target="_blank" rel="noopener" aria-label="LeoTrek on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hello@leotrek.ai" aria-label="Email LeoTrek">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#impact">Why Now</a></li>
+            <li><a href="index.html#platform">Platform</a></li>
+            <li><a href="index.html#use-cases">Use Cases</a></li>
+            <li><a href="index.html#research">Research</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-12 footer-contact text-md-start">
+          <h4>Address</h4>
+          <p>Taubstummengasse 11</p>
+          <p>1040 Vienna, Austria</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">LeoTrek AI GmbH</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js?v=20260708-8"></script>
+
+</body>
+
+</html>
