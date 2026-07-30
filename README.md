@@ -21,6 +21,8 @@ The site sorts items automatically by `date` in descending order, so the newest 
 - `summary`: short description shown on cards and at the top of the article
 - `image`: image path used on cards and the article page
 - `image_alt`: alt text for the image
+- `video_embed_url`: optional HTTPS iframe `src` URL for an embedded video on the article page
+- `video_title`: optional iframe title for accessibility, defaults to `<title> video`
 - `content`: array of paragraphs for the full article view
 - `external_url`: optional link for more detail outside the site
 - `external_label`: optional label for the external link, defaults to `Read more`
@@ -38,6 +40,8 @@ Paste this object into `content/news/news.json`:
   "summary": "Short description of the update shown on the homepage.",
   "image": "assets/img/abstract/background.png",
   "image_alt": "Descriptive image text",
+  "video_embed_url": "https://example.com/embed/video",
+  "video_title": "Embedded video title",
   "content": [
     "First paragraph of the article.",
     "Second paragraph of the article."
@@ -52,4 +56,5 @@ Paste this object into `content/news/news.json`:
 - `slug` should stay unique. It becomes the article URL: `news.html?slug=your-slug`
 - `content` should be an array of paragraphs, not one long string
 - `image` should point to an existing file inside the repo
+- Use `video_embed_url` for the iframe `src` value only, not the full `<iframe ...>` HTML
 - If you do not need an external link, remove `external_url` and `external_label`
