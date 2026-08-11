@@ -1,5 +1,27 @@
   [
     {
+      "slug": "space-industry-workshop-2026",
+      "date": "2026-08-07",
+      "category": "Public Talk",
+      "title": "LeoTrek at the Space Industry Workshop/Rio Innovation Week 2026",
+      "summary": "LeoTrek joined the Space Industry Workshop organized by the Brazilian Space Agency during Rio Innovation Week 2026, contributing to discussions on Earth Observation, AI and environmental monitoring.",
+      "image": "content/news/images/26-08-riw.png",
+      "image_alt": "LeoTrek at the Space Industry Workshop during Rio Innovation Week 2026",
+      "external_url": "https://www.linkedin.com/feed/update/urn:li:activity:7492562641937424384",
+      "external_label": "Read more",
+      "content": [
+        "LeoTrek had the pleasure of joining the Space Industry Workshop, organized by the Brazilian Space Agency (AEB) during Rio Innovation Week 2026.",
+
+
+        "Our Co-founder Cynthia Marcelino participated in the panel \"Protecting the Environment from Space: Wildfire Detection, Environmental Intelligence, and Monitoring from Orbit\", discussing how satellite data, Earth Observation and AI can support faster wildfire detection, environmental monitoring and emergency response.",
+
+        "LeoTrek was also part of the AEB Startup Booth, where we had the opportunity to present our work on real-time Earth Observation intelligence and connect with representatives from the Brazilian and international space communities.",
+
+        "A big thank you to the Brazilian Space Agency for the invitation and for creating a great environment for collaboration and exchanging ideas."
+      ]
+    },
+
+    {
       "slug": "smallsat-workshop",
       "date": "2026-03-10",
       "category": "Conference",
