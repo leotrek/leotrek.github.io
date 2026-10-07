@@ -1,5 +1,37 @@
   [
     {
+      "slug": "tuw-security-day-2026",
+      "date": "2026-10-05",
+      "category": "Conference",
+      "title": "LeoTrek Pitch at the TU Wien Security and Defence Research Day 2026",
+      "summary": "On Monday, our CEO Thomas Pusztai had the honor of pitching the LeoTrek AI-as-a-Service platform for real-time Earth Observation intelligence at the TU Wien Security and Defence Research Day 2026.",
+      "image": "content/news/images/2026-10.1-tuw-security-day.jpg",
+      "image_alt": "Thomas at the TU Wien Security and Defence Research Day 2026",
+      "external_url": "https://www.linkedin.com/feed/update/urn:li:activity:7513555313720025088",
+      "external_label": "Read more",
+      "content": [
+        "On Monday, our CEO Thomas Pusztai had the honor of pitching the LeoTrek AI-as-a-Service platform for real-time Earth Observation intelligence at the TU Wien Security and Defence Research Day 2026, at the beautiful TU The Sky, to an audience of researchers and stakeholders from the Austrian military and emergency response organizations.",
+        "While bringing AI workflows onto clusters of satellites requires efforts that go beyond the possibilities of one small European country, Austria has been and continues to be highly active in EU research projects that drive the state-of-the-art forward and various Austrian companies are well established players in the field. We hope that as LeoTrek we can make our contribution to these areas by taking EO workflows from the Cloud up to space to deliver information in real-time.",
+        "During the event we had interesting talks with emergency response stakeholders, which will hopefully develop into a long time collaboration. These direct collaborations with end users allow us to paint an ever improving picture of what ultimately matters to the user."
+      ]
+    },
+    {
+      "slug": "bex-2026",
+      "date": "2026-09-23",
+      "category": "Conference",
+      "title": "Pitch and Booth at Beyond Space Exploration Expo 2026 in Rimini",
+      "summary": "We will be pitching at BEX 2026 in Rimini.",
+      "image": "content/news/images/26-09.3-bex-rimini.jpg",
+      "image_alt": "Speaker announcement for BEX in Rimini",
+      "external_url": "https://www.linkedin.com/feed/update/urn:li:activity:7508473679073353728",
+      "external_label": "Read more",
+      "content": [
+        "Our CEO Thomas Pusztai will be pitching at BEX — Beyond Exploration Expo on September 24. 🚀",
+        "We are proud to be able to present our vision for AI-as-a-Service in space for real-time EO intelligence and looking forward to discussing partnerships and customer expectations. Talking to potential customers directly allows us to best understand their needs, so that we can address them with our platform.",
+        "If you are at BEX, come by at booth C140 and we can have a chat."
+      ]
+    },
+    {
       "slug": "esa-isd-2026",
       "date": "2026-09-17",
       "category": "Conference",
